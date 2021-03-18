@@ -1,0 +1,89 @@
+Avant de commencer, notez que le système d’exploitation minimum requis pour le tutoriel suivant est Ubuntu 16.04.
+
+Connectez-vous à votre serveur via SSH. Ouvrez le terminal shell intégré (PuTTY pour les utilisateurs de Windows) et tapez la commande suivante :
+
+ssh utilisateur@adresseip
+REMARQUE : N’oubliez pas de changer les deux valeurs avec votre véritable nom d’utilisateur et l’adresse IP du serveur. Lorsque vous y êtes invité, entrez votre nom d’utilisateur et votre mot de passe.
+
+Un serveur Minecraft nécessite Java. Donc, vérifiez s’il est installé sur votre système en exécutant cette commande :
+
+java -version
+
+Passez à la deuxième section de ce tutoriel si vous avez déjà installé Java. Sinon, passez à l’étape suivante.
+
+Exécutez ces deux commandes pour télécharger les derniers paquets de logiciels et installer Java :
+
+sudo apt-get update
+
+sudo apt-get install default-jdk
+
+Une fois l’installation de Java terminée, vous pouvez installer Screen :
+
+sudo apt-get install screen
+
+2. Installation et exécution du serveur Minecraft sous Linux
+Maintenant que Java et Screen sont prêts, nous pouvons commencer à installer un serveur Minecraft.
+Créez un nouveau répertoire dans lequel vous allez stocker tous vos fichiers de configuration Minecraft. Cette étape est facultative, mais nous la recommandons fortement afin que vous puissiez garder votre système organisé. Pour ce faire, tapez :
+
+ mkdir minecraft
+
+Une fois créé, déplacez-vous dans le répertoire nouvellement créé en tapant ce qui suit:
+
+ cd minecraft
+
+Avant de pouvoir télécharger les fichiers de configuration nécessaires, installez wget :
+
+sudo apt-get install wget
+
+
+Utilisez la commande wget pour télécharger le fichier de configuration du serveur Minecraft :
+
+wget https://launcher.mojang.com/v1/objects/bb2b6b1aefcd70dfd1892149ac3a215f6c636b07/server.jar
+
+Dans cet exemple, la dernière version du serveur est la 1.15.2. Vous devriez visiter ce lien pour vérifier si une version plus récente est disponible pour le téléchargement. Si c’est le cas, modifiez le lien pour la commande ci-dessus.
+Exécutez le fichier de configuration du serveur Minecraft en entrant cette commande. Si vous voulez utiliser l’interface graphique, il suffit de supprimer la partie nogui de la commande :
+
+java -Xmx1024M -Xms1024M -jar minecraft_server.1.15.2.jar nogui
+
+À ce stade, le programme du serveur ne démarre pas encore. Il va plutôt créer un fichier CLUF (Contrat de Licence Utilisateur Final) ou EULA en anglais que nous devons d’abord accepter.
+Pour accepter le CLUF de Minecraft, ouvrez le fichier eula.txt avec l’éditeur de texte Nano :
+
+sudo nano eula.txt
+
+Trouvez la ligne correspondant à ce qui est écrit :
+
+eula=false
+
+Puis, changez-la en :
+
+eula=true
+
+Une fois que vous avez terminé, n’oubliez pas de sauvegarder vos modifications.
+
+Une fois que cela est fait, activez Screen pour que le serveur puisse fonctionner en arrière-plan :
+
+screen -S "Minecraft server 1"
+
+Vous pouvez changer le nom en fonction de vos préférences.
+Bon travail ! Vous avez réussi à installer votre serveur Minecraft personnalisé sur Ubuntu.
+
+3. Exécution du serveur Minecraft
+Maintenant, nous allons exécuter le serveur Minecraft pour de vrai cette fois. Tapez la commande suivante à nouveau :
+
+java -Xmx1024M -Xms1024M -jar minecraft_server.1.15.2.jar nogui
+
+Comme vous pouvez le voir, Minecraft vous demande d’avoir 1024 Mo ou 1 Go de RAM disponible pour démarrer le serveur. Bien que ce soit le minimum, nous vous recommandons d’avoir plus de RAM pour une meilleure performance. Pour allouer plus de mémoire au serveur, il suffit de remplacer 1024 dans les paramètres -Xmx et -Xms par 2048 (2 Go) ou plus.
+
+Voici ce que vous devriez voir après l’exécution de la commande :
+
+Un écran de terminal montrant que le serveur Minecraft est exécuté en arrière-plan
+
+Le serveur fonctionne maintenant en arrière-plan. Pour quitter Screen, appuyez sur CTRL + A, puis D.
+
+Vous pouvez rouvrir la fenêtre Screen en tapant cette commande :
+
+screen -r
+
+Si vous avez besoin de personnaliser les paramètres du serveur, ouvrez le fichier de configuration du serveur avec Nano :
+
+nano ~/minecraft/server.properties
