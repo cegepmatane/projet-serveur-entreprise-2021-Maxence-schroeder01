@@ -8,7 +8,7 @@ Maxence Schroeder || serveur de jeu Minecraft
 URL du site web du serveurs : http://51.161.33.187/minecraft/index.html
 
 
-url du serveurs maxence-schroeder:25565
+url du serveurs sur minecraft maxence-schroeder:25565
 
 
 
