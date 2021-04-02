@@ -1,0 +1,68 @@
+[15:13:18] [main/WARN]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[15:13:18] [main/WARN]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[15:13:18] [main/WARN]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[15:13:18] [main/WARN]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[15:13:18] [main/WARN]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[15:13:18] [Server thread/INFO]: Starting minecraft server version 1.15.2
+[15:13:18] [Server thread/INFO]: Loading properties
+[15:13:18] [Server thread/INFO]: Default game type: SURVIVAL
+[15:13:18] [Server thread/INFO]: Generating keypair
+[15:13:19] [Server thread/INFO]: Starting Minecraft server on 51.161.33.187:25565
+[15:13:19] [Server thread/INFO]: Using epoll channel type
+[15:13:20] [Server thread/INFO]: Preparing level "world"
+[15:13:20] [Server thread/INFO]: Reloading ResourceManager: Default
+[15:14:10] [Server thread/INFO]: Loaded 6 recipes
+[15:14:10] [Server thread/INFO]: Loaded 825 advancements
+[15:14:11] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[15:14:14] [Server thread/INFO]: Preparing spawn area: 0%
+[15:14:14] [Server thread/INFO]: Preparing spawn area: 0%
+[15:14:14] [Server thread/INFO]: Preparing spawn area: 0%
+[15:14:14] [Server thread/INFO]: Preparing spawn area: 0%
+[15:14:14] [Server thread/INFO]: Preparing spawn area: 0%
+[15:14:14] [Server thread/INFO]: Preparing spawn area: 0%
+[15:14:14] [Server thread/INFO]: Preparing spawn area: 0%
+[15:14:15] [Server thread/INFO]: Preparing spawn area: 0%
+[15:14:15] [Server thread/INFO]: Preparing spawn area: 0%
+[15:14:16] [Server thread/INFO]: Preparing spawn area: 69%
+[15:14:16] [Server thread/INFO]: Time elapsed: 5236 ms
+[15:14:16] [Server thread/INFO]: Done (56.541s)! For help, type "help"
+[15:14:24] [User Authenticator #1/INFO]: UUID of player whyte15 is 9591a7b4-353d-430d-be0e-053da23cd034
+[15:14:24] [Server thread/INFO]: whyte15[/75.152.91.201:60575] logged in with entity id 186 at (-21.95143933464459, 67.0, 20.89526262272449)
+[15:14:25] [Server thread/INFO]: whyte15 joined the game
+[15:15:41] [Server thread/INFO]: [whyte15: Successfully filled 72 blocks]
+[15:16:22] [Server thread/INFO]: [whyte15: Successfully filled 36 blocks]
+[15:16:40] [Server thread/INFO]: [whyte15: Successfully filled 36 blocks]
+[15:16:44] [Server thread/INFO]: [whyte15: Successfully filled 36 blocks]
+[15:16:49] [Server thread/INFO]: [whyte15: Successfully filled 36 blocks]
+[15:16:54] [Server thread/INFO]: [whyte15: Successfully filled 36 blocks]
+[15:19:07] [Server thread/INFO]: [whyte15: Successfully filled 36 blocks]
+[15:19:20] [Server thread/INFO]: [whyte15: Successfully filled 36 blocks]
+[15:19:39] [Server thread/INFO]: [whyte15: Successfully filled 36 blocks]
+[15:19:49] [Server thread/INFO]: [whyte15: Successfully filled 12 blocks]
+[15:22:39] [Server thread/INFO]: [whyte15: The difficulty has been set to Peaceful]
+[15:26:21] [Server thread/INFO]: [whyte15: Set the time to 13000]
+[15:26:33] [Server thread/INFO]: [whyte15: Set the time to 1000]
+[15:42:35] [Server thread/INFO]: [whyte15: Summoned new Item Frame]
+[15:43:37] [Server thread/INFO]: [whyte15: Summoned new Item Frame]
+[15:43:58] [Server thread/INFO]: [whyte15: Summoned new Item Frame]
+[15:44:13] [Server thread/INFO]: [whyte15: Summoned new Item Frame]
+[15:44:24] [Server thread/WARN]: Unable to load item from: {id:"dark_concrete",Count:1}
+[15:44:24] [Server thread/INFO]: [whyte15: Summoned new Item Frame]
+[16:10:59] [User Authenticator #2/INFO]: Disconnecting /75.152.91.201:65152: Failed to verify username!
+[16:10:59] [User Authenticator #2/ERROR]: Username 'Camera_Max' tried to join with an invalid session
+[16:10:59] [Server thread/INFO]: /75.152.91.201:65152 lost connection: Failed to verify username!
+[16:13:05] [Server thread/INFO]: whyte15 lost connection: Disconnected
+[16:13:05] [Server thread/INFO]: whyte15 left the game
+[17:34:01] [Server thread/INFO]: Stopping the server
+[17:34:01] [Server thread/INFO]: Stopping server
+[17:34:01] [Server thread/INFO]: Saving players
+[17:34:01] [Server thread/INFO]: Saving worlds
+[17:34:01] [Server thread/INFO]: Saving chunks for level 'world'/minecraft:the_end
+[17:34:01] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[17:34:01] [Server thread/INFO]: Saving chunks for level 'world'/minecraft:overworld
+[17:34:01] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[17:34:01] [Server thread/INFO]: Saving chunks for level 'world'/minecraft:the_nether
+[17:34:01] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[17:34:01] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[17:34:01] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[17:34:01] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
